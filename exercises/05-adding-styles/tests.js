@@ -12,7 +12,7 @@ test("ReactDOM needs to be called once", () => {
 test("The component Badge should return the exact HTML", () => {
   const tree = renderer.create(ReactDOM.render.mock.calls[0][0]).toJSON();
   expect(tree).toMatchInlineSnapshot(`
-<button
+  <button
   className="btn btn-primary"
   style={
     Object {
@@ -37,3 +37,5 @@ test("The component Badge should return the exact HTML", () => {
 //   const tree = renderer.create(ReactDOM.render.mock.calls[0][0]).toJSON();
 //   expect(tree).toMatchInlineSnapshot();
 // });
+
+
